@@ -3,6 +3,7 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         StringBuffer sb = new StringBuffer();
+        if (nRows == 1) return s;
         for (int i=0;i<nRows;i++){
             int now = i;
             while(now<s.length()){
