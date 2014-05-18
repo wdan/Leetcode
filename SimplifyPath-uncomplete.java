@@ -16,7 +16,7 @@ public class Solution {
             if (path.charAt(i) == '.'){
                 if (i == sb.length() - 1 || path.charAt(i+1) == '/'){
                     sb.deleteCharAt(i);
-                    if (i < sb.length()) 
+                    if (i < sb.length())
                         sb.deleteCharAt(i);
                 }else{
                     sb.delete(his[pos] + 1, i + 3);
@@ -28,6 +28,6 @@ public class Solution {
         if (sb.charAt(sb.length() - 1) == '/')
             sb.deleteCharAt(sb.length() - 1);
         return sb.toString();
-        
+
     }
 }
